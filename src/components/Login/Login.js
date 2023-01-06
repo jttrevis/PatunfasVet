@@ -1,55 +1,44 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { signOut, signInWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
 import { auth } from './../../services/firebaseConfig';
-
 import { toast } from 'react-hot-toast';
 
 const LoginForm = () => {
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
-	const [isLoggedIn, setIsLoggedIn] = useState(false);
-	const history = useNavigate();
 
 	const [user, setUser] = useState(null);
+	const navigate = useNavigate();
 
-	const handleSignOut = async () => {
-		try {
-			await signOut(auth).then(() => {
-				setIsLoggedIn(false);
-				toast.success('Bye Bye');
+	useEffect(() => {
+		const listen = onAuthStateChanged(auth, (user) => {
+			if (user) {
+				setUser(user);
+			} else {
 				setUser(null);
-			});
-		} catch (error) {
-			console.log(error.message);
-		}
-	};
+			}
+		});
+		return listen();
+	}, []);
 
 	const handleSignIn = async (e) => {
 		e.preventDefault();
-
-		try {
-			await signInWithEmailAndPassword(auth, email, password).then(
-				(response) => {
-					setIsLoggedIn(true);
-					setUser(response.user);
-					toast.success('Welcome: ' + response.user.email);
-					history('/home');
-				},
-			);
-		} catch (error) {
-			toast.error('Error! Try again.');
-			console.log(error.message);
-		}
+		await signInWithEmailAndPassword(auth, email, password)
+			.then((userCredentials) => {
+				toast.success('Logged in successfully');
+				console.log(userCredentials);
+				navigate('/home');
+			})
+			.catch((error) => {
+				console.log(error);
+			});
 	};
+
 	return (
 		<>
-			{isLoggedIn ? (
-				<div>
-					<p>Welcome, {user.email}!</p>
-
-					<button onClick={handleSignOut}>SignOut</button>
-				</div>
+			{user ? (
+				<>{navigate('/home')}</>
 			) : (
 				<div>
 					<form className='flex flex-col items-center justify-center container mx-auto min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500'>
@@ -68,12 +57,15 @@ const LoginForm = () => {
 							onChange={(e) => setPassword(e.target.value)}
 							value={password}
 						/>
-						<button
-							className='bg-blue-600  hover:bg-blue-900 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-900 text-white rounded p-3  	'
-							onClick={handleSignIn}
-						>
-							Sign In
-						</button>
+						<Link to='/home'>
+							<button
+								type='submit'
+								className='bg-blue-600  hover:bg-blue-900 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-900 text-white rounded p-3  	'
+								onClick={handleSignIn}
+							>
+								Sign In
+							</button>
+						</Link>
 						<span>Create a new account?</span>
 
 						<Link
