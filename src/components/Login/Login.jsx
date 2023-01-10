@@ -41,7 +41,7 @@ const LoginForm = () => {
 				<>{navigate('/home')}</>
 			) : (
 				<div>
-					<form className='flex flex-col items-center justify-center container mx-auto min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500'>
+					<form className='flex flex-col items-center justify-center container mx-auto min-h-screen '>
 						<h3 className='text-5xl font-bold p-5'>Sign In</h3>
 						<input
 							className='m-2 p-1 rounded '

@@ -1,5 +1,6 @@
 import { onAuthStateChanged } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
+import Header from '../../components/Header/Header';
 import Logout from '../../components/Logout/Logout';
 import { auth } from './../../services/firebaseConfig';
 
@@ -18,11 +19,13 @@ const Home = () => {
 	}, []);
 	return (
 		<>
+			<Header />
 			{user ? (
-				<div className='flex flex-col items-center justify-center container mx-auto min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500'>
-					<p className='text-5xl font-bold p-5'>Welcome: {user.email}</p>
-					<Logout />
-				</div>
+				<>
+					<div className='flex flex-col items-center justify-center container mx-auto min-h-screen '>
+						<Logout />
+					</div>
+				</>
 			) : null}
 		</>
 	);
