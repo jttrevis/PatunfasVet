@@ -38,9 +38,9 @@ const Header = () => {
 						/>
 					</Link>
 					<ul className='hidden md:flex items-center p-8 '>
-						<li className='p-8 '>Home</li>
-						<li className='p-8'>About</li>
-						<li className='p-8'>Appointment</li>
+						<li className='p-8 font-bold'>Home</li>
+						<li className='p-8 font-bold'>About</li>
+						<li className='p-8 font-bold'>Appointment</li>
 						{user ? (
 							<div className='p-8 flex flex-col items-center justify-center'>
 								<Logout />

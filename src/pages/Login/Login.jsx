@@ -40,7 +40,7 @@ const LoginForm = () => {
 	return (
 		<>
 			{user ? (
-				<>{navigate('/home')}</>
+				<>{navigate('/')}</>
 			) : (
 				<div>
 					<Header />
@@ -60,7 +60,7 @@ const LoginForm = () => {
 							onChange={(e) => setPassword(e.target.value)}
 							value={password}
 						/>
-						<Link to='/home'>
+						<Link to='/'>
 							<button
 								type='submit'
 								className='btn'
@@ -73,7 +73,7 @@ const LoginForm = () => {
 
 						<Link
 							className='p-3 text-blue-900 font-bold'
-							to={'/'}
+							to={'/register'}
 						>
 							Sign up!
 						</Link>
