@@ -5,7 +5,7 @@ export const AppoitnmentButton = () => {
 		<div className=''>
 			<Link to='/appointment'>
 				<button
-					className='btn animate-bounce flex flex-col items-center'
+					className='btn animate-bounce flex flex-col items-center shadow-2xl'
 					type='button'
 				>
 					Request an Appointment

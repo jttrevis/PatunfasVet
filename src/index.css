@@ -10,7 +10,7 @@ body {
 }
 
 .btn {
-  background-image: linear-gradient(to right, rgba(29, 80, 248, 0.685), rgb(44, 149, 209));
+  background-color: #0CCBFF;;
   border-radius: 15px;
   padding: 1rem 2rem;
   font-weight: bold;
@@ -19,6 +19,21 @@ body {
 
 .btn:hover {
   filter: brightness(0.8);
+}
+
+.serviceBlock {
+  
+  height: 300px;
+  width: 300px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  padding: 0 5px;
 }
 
 

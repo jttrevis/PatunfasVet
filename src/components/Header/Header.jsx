@@ -63,7 +63,7 @@ const Header = () => {
 						) : (
 							<div className='p-8 '>
 								<Link to='/login'>
-									<button className='btn ml-4'>Login</button>
+									<button className='btn ml-4 shadow-2xl '>Login</button>
 								</Link>
 							</div>
 						)}
@@ -86,7 +86,7 @@ const Header = () => {
 								: 'fixed  h-screen left-[-100%] ease-in-out duration-500'
 						}
 					>
-						<ul className='uppercase flex flex-col pt-24 h-screen bg-blue-400'>
+						<ul className='uppercase flex flex-col pt-24 h-screen bg-[#0CCBFF] '>
 							<Link
 								to={'/'}
 								className='p-4'
@@ -112,7 +112,7 @@ const Header = () => {
 							) : (
 								<div className='p-4'>
 									<Link to='/login'>
-										<button className='btn font-bold '>Login</button>
+										<button className='btn font-bold shadow-2xl '>Login</button>
 									</Link>
 								</div>
 							)}

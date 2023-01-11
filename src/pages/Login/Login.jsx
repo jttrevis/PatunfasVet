@@ -63,7 +63,7 @@ const LoginForm = () => {
 						<Link to='/'>
 							<button
 								type='submit'
-								className='btn'
+								className='btn shadow-2xl'
 								onClick={handleSignIn}
 							>
 								Login
