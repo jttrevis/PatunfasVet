@@ -5,7 +5,19 @@
 
 
 body {
-  background-image: linear-gradient(to right, rgb(79, 116, 238), rgb(57, 217, 238))
+  background-image: linear-gradient(to right, rgb(79, 116, 238), rgb(57, 217, 238));
+}
+
+.btn {
+  background-image: linear-gradient(to right, rgb(15, 47, 150), rgb(57, 217, 238));
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  filter: brightness(0.8);
 }
 
 

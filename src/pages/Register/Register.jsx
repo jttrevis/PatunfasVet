@@ -56,7 +56,7 @@ const RegisterForm = () => {
 					value={passwordConfirm}
 				/>
 				<button
-					className='bg-blue-600  hover:bg-blue-900 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-900 text-white rounded p-3  	'
+					className='btn'
 					onClick={registerUser}
 				>
 					Create User

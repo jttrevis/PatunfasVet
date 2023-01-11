@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
 import { auth } from './../../services/firebaseConfig';
 import { toast } from 'react-hot-toast';
+import Header from '../../components/Header/Header';
 
 const LoginForm = () => {
 	const [email, setEmail] = useState('');
@@ -28,10 +29,11 @@ const LoginForm = () => {
 			.then((userCredentials) => {
 				toast.success('Logged in successfully');
 				console.log(userCredentials);
-				navigate('/home');
+				navigate('/');
 			})
 			.catch((error) => {
 				console.log(error);
+				toast.error('Password or email is incorrect');
 			});
 	};
 
@@ -41,8 +43,9 @@ const LoginForm = () => {
 				<>{navigate('/home')}</>
 			) : (
 				<div>
+					<Header />
 					<form className='flex flex-col items-center justify-center container mx-auto min-h-screen '>
-						<h3 className='text-5xl font-bold p-5'>Sign In</h3>
+						<h3 className='text-5xl font-bold p-5'>Login</h3>
 						<input
 							className='m-2 p-1 rounded '
 							type='email'
@@ -60,10 +63,10 @@ const LoginForm = () => {
 						<Link to='/home'>
 							<button
 								type='submit'
-								className='bg-blue-600  hover:bg-blue-900 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-900 text-white rounded p-3  	'
+								className='btn'
 								onClick={handleSignIn}
 							>
-								Sign In
+								Login
 							</button>
 						</Link>
 						<span>Create a new account?</span>

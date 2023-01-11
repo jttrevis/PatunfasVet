@@ -1,24 +1,25 @@
 import { Toaster } from 'react-hot-toast';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Register from './components/Register/Register';
-import Login from './components/Login/Login';
+
 import Home from './pages/Home/Home';
+import LoginForm from './pages/Login/Login';
+import RegisterForm from './pages/Register/Register';
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route
-					path='/'
-					element={<Register />}
+					path='/register'
+					element={<RegisterForm />}
 				/>
 				<Route
 					path='/login'
-					element={<Login />}
+					element={<LoginForm />}
 				/>
 				<Route
-					path='/home'
+					path='/'
 					element={<Home />}
 				/>
 			</Routes>
