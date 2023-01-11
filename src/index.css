@@ -6,10 +6,11 @@
 
 body {
   background-image: linear-gradient(to right, rgb(79, 116, 238), rgb(57, 217, 238));
+  font-family: Roboto;
 }
 
 .btn {
-  background-image: linear-gradient(to right, rgb(15, 47, 150), rgb(57, 217, 238));
+  background-image: linear-gradient(to right, rgba(29, 80, 248, 0.685), rgb(44, 149, 209));
   border-radius: 15px;
   padding: 1rem 2rem;
   font-weight: bold;

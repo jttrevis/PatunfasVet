@@ -38,9 +38,24 @@ const Header = () => {
 						/>
 					</Link>
 					<ul className='hidden md:flex items-center p-8 '>
-						<li className='p-8 font-bold'>Home</li>
-						<li className='p-8 font-bold'>About</li>
-						<li className='p-8 font-bold'>Appointment</li>
+						<Link
+							to='/'
+							className='p-8 font-bold'
+						>
+							Home
+						</Link>
+						<Link
+							to='/about'
+							className='p-8 font-bold'
+						>
+							About
+						</Link>
+						<Link
+							to='/appointment'
+							className='p-8 font-bold'
+						>
+							Appointment
+						</Link>
 						{user ? (
 							<div className='p-8 flex flex-col items-center justify-center'>
 								<Logout />
@@ -71,10 +86,25 @@ const Header = () => {
 								: 'fixed  h-screen left-[-100%] ease-in-out duration-500'
 						}
 					>
-						<ul className='uppercase pt-24 h-screen bg-blue-400'>
-							<li className='p-4'>Home</li>
-							<li className='p-4'>About</li>
-							<li className='p-4'>Appointment</li>
+						<ul className='uppercase flex flex-col pt-24 h-screen bg-blue-400'>
+							<Link
+								to={'/'}
+								className='p-4'
+							>
+								Home
+							</Link>
+							<Link
+								to={'/about'}
+								className='p-4'
+							>
+								About
+							</Link>
+							<Link
+								to={'/appointment'}
+								className='p-4'
+							>
+								Appointment
+							</Link>
 							{user ? (
 								<div className='p-4'>
 									<Logout />
@@ -82,7 +112,7 @@ const Header = () => {
 							) : (
 								<div className='p-4'>
 									<Link to='/login'>
-										<button className='btn ml-4'>Login</button>
+										<button className='btn font-bold '>Login</button>
 									</Link>
 								</div>
 							)}
