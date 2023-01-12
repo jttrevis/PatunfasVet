@@ -29,8 +29,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: bold;
+  
   text-align: center;
   cursor: pointer;
   padding: 0 5px;
@@ -53,6 +54,12 @@ body {
 
 .hoursBlock ul li span {
   margin-left: 7rem;
+}
+
+.txt{
+  color: #31d1fdcc;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
 }
 
 

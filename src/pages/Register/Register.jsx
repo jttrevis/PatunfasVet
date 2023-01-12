@@ -59,7 +59,7 @@ const RegisterForm = () => {
 						value={passwordConfirm}
 					/>
 					<button
-						className='btn'
+						className='btn shadow-2xl'
 						onClick={registerUser}
 					>
 						Create User

@@ -1,6 +1,7 @@
 import { Toaster } from 'react-hot-toast';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Appointment from './pages/Appointment/Appointment';
 
 import Home from './pages/Home/Home';
 import LoginForm from './pages/Login/Login';
@@ -10,6 +11,10 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
+				<Route
+					path='/appointment'
+					element={<Appointment />}
+				/>
 				<Route
 					path='/register'
 					element={<RegisterForm />}

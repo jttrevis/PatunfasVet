@@ -16,7 +16,7 @@ export const Hero = () => {
 						/>
 					</div>
 					<div className='flex flex-col justify-center items-center'>
-						<h1 className='text-4xl text-center font-extrabold p-6'>
+						<h1 className='text-6xl  text-center font-extrabold p-6'>
 							Pantufas Vet
 						</h1>
 						<h4 className='text-2xl text-center p-12'>
