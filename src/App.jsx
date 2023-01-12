@@ -1,6 +1,7 @@
 import { Toaster } from 'react-hot-toast';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import About from './pages/About/About';
 import Appointment from './pages/Appointment/Appointment';
 
 import Home from './pages/Home/Home';
@@ -11,6 +12,11 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
+				<Route
+					path='/about'
+					element={<About />}
+				/>
+
 				<Route
 					path='/appointment'
 					element={<Appointment />}

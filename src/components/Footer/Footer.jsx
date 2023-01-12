@@ -22,6 +22,11 @@ export const Footer = () => {
 					<FaLinkedinIn size={45} />
 				</Link>
 			</footer>
+			<div className='text-center p-4'>
+				<p className='text-xs	'>email :contacttrevisol@gmail.com</p>
+				<p className='text-xs	'>created by: Junior Cesar Trevisol</p>
+				<p className='text-xs	'>phone: +44 07858363772</p>
+			</div>
 		</div>
 	);
 };

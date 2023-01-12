@@ -53,11 +53,8 @@ export const Hero = () => {
 					</div>
 				</section>
 			</main>
-			<div className='text-center p-4'>
+			<div>
 				<Footer />
-				<p className='text-xs	'>email :contacttrevisol@gmail.com</p>
-				<p className='text-xs	'>created by: Junior Cesar Trevisol</p>
-				<p className='text-xs	'>phone: +44 07858363772</p>
 			</div>
 		</>
 	);
