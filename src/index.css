@@ -36,4 +36,23 @@ body {
   padding: 0 5px;
 }
 
+.hoursBlock {
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin-bottom: 10rem;
+  line-height: 3rem;
+}
+
+.hoursBlock ul li {
+  border-bottom: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hoursBlock ul li span {
+  margin-left: 7rem;
+}
+
 

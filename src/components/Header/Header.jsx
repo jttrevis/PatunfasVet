@@ -28,11 +28,11 @@ const Header = () => {
 	};
 	return (
 		<>
-			<header className=' flex items-center justify-evenly mt-20  px-4 mx-auto '>
+			<header className=' flex items-center justify-center mt-20  px-4 mx-auto '>
 				<div className='flex '>
 					<Link to='/'>
 						<img
-							className=''
+							className='ml-6'
 							src='/images/logo.svg'
 							alt='logo pantufas vet'
 						/>
@@ -74,9 +74,12 @@ const Header = () => {
 					className='block md:hidden'
 				>
 					{!menuMobile ? (
-						<AiOutlineClose size={20} />
+						<AiOutlineClose size={25} />
 					) : (
-						<AiOutlineMenu size={20} />
+						<AiOutlineMenu
+							size={25}
+							className=''
+						/>
 					)}
 
 					<div
@@ -106,7 +109,7 @@ const Header = () => {
 								Appointment
 							</Link>
 							{user ? (
-								<div className='p-4'>
+								<div className=''>
 									<Logout />
 								</div>
 							) : (

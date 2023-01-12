@@ -1,6 +1,7 @@
 import React from 'react';
 import { AppoitnmentButton } from '../AppointmentButton/AppointmentButton';
 import { ServicesTable } from '../ServicesTable/ServicesTable';
+import { HoursTable } from './../HoursTable/HoursTable';
 
 export const Hero = () => {
 	return (
@@ -32,6 +33,19 @@ export const Hero = () => {
 						Our Services
 					</h1>
 					<ServicesTable />
+				</div>
+			</section>
+			<section>
+				<div>
+					<div className='flex flex-col'>
+						<h1 className='text-4xl text-center font-extrabold p-6'>
+							Come see us
+						</h1>
+						<p className='text-2xl text-center '>21, Bartlett Street</p>
+						<p className='text-2xl text-center '>Liverpool, L15 0HN</p>
+						<button className='btn my-8 shadow-2xl'>Get Directions</button>
+					</div>
+					<HoursTable />
 				</div>
 			</section>
 		</main>

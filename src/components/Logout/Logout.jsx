@@ -21,7 +21,7 @@ const Logout = () => {
 	return (
 		<div>
 			<button
-				className='btn '
+				className='btn ml-4 shadow-2xl '
 				onClick={handleSignOut}
 			>
 				Sign Out
