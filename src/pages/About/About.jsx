@@ -47,10 +47,10 @@ const About = () => {
 	return (
 		<>
 			<Header />
-			<div className='px-2 w-full max-w-[980px]  h-[500px]  m-auto relative group md:max-w-[500px] '>
+			<div className='px-2 w-full max-w-[980px]  h-[500px]  m-auto relative group md:max-w-[768px] '>
 				<div
 					style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-					className='w-full h-full autoplay  rounded-2xl bg-center bg-cover bg-no-repeat	 duration-500 md:bg-contain'
+					className='w-full h-full autoplay  rounded-2xl bg-center bg-cover bg-no-repeat	 duration-500 md:bg-cover'
 				></div>
 				<div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer duration-500'>
 					<BsChevronCompactLeft
@@ -93,7 +93,7 @@ const About = () => {
 						/>
 					</div>
 					<div>
-						<p>
+						<p className='text-center text-xl pb-12'>
 							For cats, we provide routine check-ups, feline leukemia and AIDS
 							testing, and deworming and flea/tick control. We also offer
 							routine dental cleanings and surgeries such as spaying and
@@ -107,7 +107,7 @@ const About = () => {
 						/>
 					</div>
 					<div>
-						<p>
+						<p className='text-center text-xl pb-12'>
 							For dogs, we provide routine check-ups, vaccinations, heartworm
 							testing, and deworming and flea/tick control. We also offer
 							routine dental cleanings and surgeries such as spaying and
