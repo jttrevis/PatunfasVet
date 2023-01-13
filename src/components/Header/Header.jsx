@@ -29,7 +29,7 @@ const Header = () => {
 	return (
 		<>
 			<header className=' flex items-center justify-center mt-20  px-4 mx-auto '>
-				<div className='flex '>
+				<div className='flex  '>
 					<Link to='/'>
 						<img
 							className='ml-6'
@@ -37,7 +37,7 @@ const Header = () => {
 							alt='logo pantufas vet'
 						/>
 					</Link>
-					<ul className='hidden md:flex items-center p-8 '>
+					<ul className='hidden  md:flex items-center p-8 '>
 						<Link
 							to='/'
 							className='p-8 font-bold'
@@ -85,11 +85,11 @@ const Header = () => {
 					<div
 						className={
 							!menuMobile
-								? 'fixed h-screen left-0 top-0 w-[60%] border-r border-r-cyan-500 ease-in-out duration-500'
+								? 'fixed z-50 h-screen left-0 top-0 w-[60%] border-r border-r-cyan-500 ease-in-out duration-500'
 								: 'fixed  h-screen left-[-100%] ease-in-out duration-500'
 						}
 					>
-						<ul className='uppercase flex flex-col pt-24 h-screen bg-[#0CCBFF] '>
+						<ul className=' z-50  uppercase relative  flex flex-col pt-24 h-screen bg-[#0CCBFF] '>
 							<Link
 								to={'/'}
 								className='p-4'
@@ -98,7 +98,7 @@ const Header = () => {
 							</Link>
 							<Link
 								to={'/about'}
-								className='p-4'
+								className='p-4 '
 							>
 								About
 							</Link>
@@ -115,7 +115,9 @@ const Header = () => {
 							) : (
 								<div className='p-4'>
 									<Link to='/login'>
-										<button className='btn font-bold shadow-2xl '>Login</button>
+										<button className='btn  font-bold shadow-2xl '>
+											Login
+										</button>
 									</Link>
 								</div>
 							)}

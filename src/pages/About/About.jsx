@@ -6,9 +6,6 @@ import { useState } from 'react';
 
 const slides = [
 	{
-		url: 'images/vetPhotos/vet1.jpg',
-	},
-	{
 		url: 'images/vetPhotos/vet2.jpg',
 	},
 	{
@@ -47,10 +44,10 @@ const About = () => {
 	return (
 		<>
 			<Header />
-			<div className='px-2 w-full max-w-[980px]  h-[500px]  m-auto relative group md:max-w-[768px] '>
+			<div className='px-2 w-full max-w-[980px] h-[600px]   m-auto relative group md:max-w-[960px] '>
 				<div
 					style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-					className='w-full h-full autoplay  rounded-2xl bg-center bg-cover bg-no-repeat	 duration-500 md:bg-cover'
+					className='w-full h-full  rounded-2xl bg-center bg-cover bg-no-repeat duration-900 md:bg-contain  '
 				></div>
 				<div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer duration-500'>
 					<BsChevronCompactLeft
@@ -64,7 +61,7 @@ const About = () => {
 						size={30}
 					/>
 				</div>
-				<div className='flex top-4 justify-center py-2 pb-6'>
+				<div className='flex rounded-2xl justify-center py-2 pb-6 '>
 					{slides.map((slide, slideIndex) => (
 						<div
 							key={slideIndex}
@@ -88,6 +85,7 @@ const About = () => {
 				<section className='flex flex-col justify-center items-center text-center gap-4 py-12'>
 					<div>
 						<img
+							className='w-[400px] rounded-2xl  '
 							src='images/vetPhotos/catAbout.jpg'
 							alt='Cat with doctor'
 						/>
@@ -102,6 +100,7 @@ const About = () => {
 					</div>
 					<div>
 						<img
+							className='w-[400px] rounded-2xl  '
 							src='images/vetPhotos/dogAbout.jpg'
 							alt='dog with doctor'
 						/>
