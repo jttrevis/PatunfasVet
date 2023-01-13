@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BackToTopButton } from '../../components/BackToTopButton/BackToTopButton';
 import { Footer } from './../../components/Footer/Footer';
 import Header from './../../components/Header/Header';
 
@@ -56,6 +57,7 @@ const Appointment = () => {
 				</form>
 			</div>
 			<Footer />
+			<BackToTopButton />
 		</div>
 	);
 };

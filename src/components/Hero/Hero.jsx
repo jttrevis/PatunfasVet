@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppoitnmentButton } from '../AppointmentButton/AppointmentButton';
+import { BackToTopButton } from '../BackToTopButton/BackToTopButton';
 import { Footer } from '../Footer/Footer';
 import { ServicesTable } from '../ServicesTable/ServicesTable';
 import { HoursTable } from './../HoursTable/HoursTable';
@@ -55,6 +56,7 @@ export const Hero = () => {
 			</main>
 			<div>
 				<Footer />
+				<BackToTopButton />
 			</div>
 		</>
 	);
