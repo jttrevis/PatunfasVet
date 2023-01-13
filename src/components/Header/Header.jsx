@@ -40,19 +40,19 @@ const Header = () => {
 					<ul className='hidden  md:flex items-center p-8 '>
 						<Link
 							to='/'
-							className='p-8 font-bold'
+							className='p-8 font-bold hover:scale-150 duration-300'
 						>
 							Home
 						</Link>
 						<Link
 							to='/about'
-							className='p-8 font-bold'
+							className='p-8 font-bold hover:scale-150 duration-300'
 						>
 							About
 						</Link>
 						<Link
 							to='/appointment'
-							className='p-8 font-bold'
+							className='p-8 font-bold hover:scale-150 duration-300'
 						>
 							Appointment
 						</Link>
@@ -92,19 +92,19 @@ const Header = () => {
 						<ul className=' z-50  uppercase relative  flex flex-col pt-24 h-screen bg-[#0CCBFF] '>
 							<Link
 								to={'/'}
-								className='p-4'
+								className='p-4 font-bold hover:opacity-60'
 							>
 								Home
 							</Link>
 							<Link
 								to={'/about'}
-								className='p-4 '
+								className='p-4 font-bold hover:opacity-60 '
 							>
 								About
 							</Link>
 							<Link
 								to={'/appointment'}
-								className='p-4'
+								className='p-4 font-bold hover:opacity-60'
 							>
 								Appointment
 							</Link>
