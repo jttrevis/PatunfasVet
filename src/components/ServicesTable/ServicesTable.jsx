@@ -2,7 +2,10 @@ import { Link } from 'react-router-dom';
 
 export const ServicesTable = () => {
 	return (
-		<div className='md:container '>
+		<div
+			id='services'
+			className='md:container '
+		>
 			<section className='flex flex-col gap-16  m-12 md:flex-row'>
 				<div className='flex text-center flex-col justify-center items-center hover:scale-110 duration-500'>
 					<Link

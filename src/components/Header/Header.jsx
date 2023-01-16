@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { auth } from './../../services/firebaseConfig';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+
 import Logout from '../Logout/Logout';
 
 const Header = () => {
@@ -56,6 +57,7 @@ const Header = () => {
 						>
 							Appointment
 						</Link>
+
 						{user ? (
 							<div className='p-8 flex flex-col items-center justify-center'>
 								<Logout />
@@ -108,6 +110,7 @@ const Header = () => {
 							>
 								Appointment
 							</Link>
+
 							{user ? (
 								<div className=''>
 									<Logout />

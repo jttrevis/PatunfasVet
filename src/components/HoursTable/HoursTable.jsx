@@ -1,7 +1,7 @@
 export const HoursTable = () => {
 	return (
 		<>
-			<div className=''>
+			<div id='hours'>
 				<div className='hoursBlock md:w-[700px] bg-cyan-100/10 rounded-2xl'>
 					<ul>
 						<li>
