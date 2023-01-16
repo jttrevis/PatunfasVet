@@ -9,18 +9,34 @@ export const Footer = () => {
 	return (
 		<div>
 			<footer className='flex flex-row justify-center h-[150px] gap-6'>
-				<Link href=''>
+				<a
+					target='_blank'
+					rel='noreferrer'
+					href='https://www.facebook.com/junior.trevisol'
+				>
 					<FaFacebookSquare size={45} />
-				</Link>
-				<Link href=''>
+				</a>
+				<a
+					target='_blank'
+					rel='noreferrer'
+					href='https://www.instagram.com/juniortrevisol91/'
+				>
 					<FaInstagram size={45} />
-				</Link>
-				<Link href=''>
+				</a>
+				<a
+					target='_blank'
+					rel='noreferrer'
+					href='https://wa.me/+4407858363772'
+				>
 					<FaWhatsapp size={45} />
-				</Link>
-				<Link href=''>
+				</a>
+				<a
+					target='_blank'
+					rel='noreferrer'
+					href='https://www.linkedin.com/in/jrtrevisol/'
+				>
 					<FaLinkedinIn size={45} />
-				</Link>
+				</a>
 			</footer>
 			<div className='text-center p-4'>
 				<p className='text-xs	'>email :contacttrevisol@gmail.com</p>
