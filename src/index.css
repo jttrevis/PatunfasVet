@@ -26,16 +26,13 @@ body {
   
   height: 300px;
   width: 300px;
+  object-fit: cover;
   border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.7rem;
-  font-weight: bold;
-  
-  text-align: center;
   cursor: pointer;
-  padding: 0 5px;
+  
+}
+.serviceBlock img {
+ 
 }
 
 .hoursBlock {
