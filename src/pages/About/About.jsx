@@ -1,6 +1,8 @@
 import { BackToTopButton } from '../../components/BackToTopButton/BackToTopButton';
 import { Slides } from '../../components/Slides/Slides';
 import { Footer } from './../../components/Footer/Footer';
+import { AppoitnmentButton } from '../../components/AppointmentButton/AppointmentButton';
+
 import Header from './../../components/Header/Header';
 
 const About = () => {
@@ -51,6 +53,7 @@ const About = () => {
 							chronic conditions such as arthritis and diabetes.
 						</p>
 					</div>
+					<AppoitnmentButton />
 				</section>
 				<Footer />
 				<BackToTopButton />
