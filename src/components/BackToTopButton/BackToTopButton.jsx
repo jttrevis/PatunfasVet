@@ -25,7 +25,7 @@ export const BackToTopButton = () => {
 			{backToTopButton && (
 				<button
 					onClick={scrollUp}
-					className='fixed  bottom-6 right-5  '
+					className='fixed  bottom-6 right-5 hover:scale-125 duration-500 '
 				>
 					<BsFillArrowUpCircleFill size={45} />
 				</button>

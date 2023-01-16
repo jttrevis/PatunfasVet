@@ -60,9 +60,9 @@ export const Slides = () => {
 					<div
 						key={slideIndex}
 						onClick={() => goToSlide(slideIndex)}
-						className='text-2xl cursor-pointer py-4'
+						className='text-2xl cursor-pointer py-4 border-solid border-red-400 '
 					>
-						<RxDotFilled />
+						<RxDotFilled className='' />
 					</div>
 				))}
 			</div>

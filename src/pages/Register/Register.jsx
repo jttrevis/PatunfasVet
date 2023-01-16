@@ -17,6 +17,9 @@ const RegisterForm = () => {
 
 		if (password !== passwordConfirm) {
 			toast.error('Passwords do not match');
+			setEmail('');
+			setPassword('');
+			setPasswordConfirm('');
 			return;
 		}
 
@@ -25,9 +28,12 @@ const RegisterForm = () => {
 			toast.success('User Registred!');
 			navigate('/login');
 		} catch (error) {
+			setEmail('');
+			setPassword('');
+			setPasswordConfirm('');
 			console.log(error.message);
 			toast.error('Error! Try again!');
-			navigate('/');
+			navigate('/register');
 		}
 	};
 

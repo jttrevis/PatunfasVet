@@ -25,15 +25,15 @@ const LoginForm = () => {
 
 	const handleSignIn = async (e) => {
 		e.preventDefault();
+
 		await signInWithEmailAndPassword(auth, email, password)
 			.then((userCredentials) => {
 				toast.success('Logged!');
 				navigate('/');
 			})
-
 			.catch((error) => {
 				console.log(error);
-				toast.error('Password or email is incorrect');
+				toast.error('Password or Email is incorrect');
 			});
 	};
 

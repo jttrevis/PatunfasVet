@@ -7,11 +7,17 @@ import Appointment from './pages/Appointment/Appointment';
 import Home from './pages/Home/Home';
 import LoginForm from './pages/Login/Login';
 import RegisterForm from './pages/Register/Register';
+import { Emergency } from './pages/Emergency/Emergency';
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
+				<Route
+					path='/emergency'
+					element={<Emergency />}
+				/>
+
 				<Route
 					path='/about'
 					element={<About />}
