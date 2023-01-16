@@ -3,6 +3,7 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from './../../services/firebaseConfig';
 import { useNavigate, Link } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
+import { motion as m } from 'framer-motion';
 import Header from '../../components/Header/Header';
 
 const RegisterForm = () => {
@@ -38,9 +39,19 @@ const RegisterForm = () => {
 	};
 
 	return (
-		<>
+		<m.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			transition={{ duration: 1, ease: 'easeOut' }}
+			exit={{ opacity: 1 }}
+		>
 			<Header />
-			<div className='flex flex-col items-center justify-center container mx-auto min-h-screen '>
+			<m.form
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ delay: 1.2 }}
+				className='flex flex-col items-center justify-center container mx-auto py-8 '
+			>
 				<div className=' flex flex-col items-center justify-center'>
 					<h3 className='text-5xl font-bold p-5'>Sign Up</h3>
 					<input
@@ -77,8 +88,8 @@ const RegisterForm = () => {
 				>
 					Sign in!
 				</Link>
-			</div>
-		</>
+			</m.form>
+		</m.div>
 	);
 };
 

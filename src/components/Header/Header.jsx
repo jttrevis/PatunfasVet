@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { auth } from './../../services/firebaseConfig';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import { motion as m } from 'framer-motion';
 
 import Logout from '../Logout/Logout';
 
@@ -29,7 +30,12 @@ const Header = () => {
 	};
 	return (
 		<>
-			<header className=' flex items-center justify-center mt-20  px-4 mx-auto '>
+			<m.header
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ delay: 0.3 }}
+				className=' flex items-center justify-center mt-20  px-4 mx-auto  '
+			>
 				<div className='flex  '>
 					<Link to='/'>
 						<img
@@ -87,11 +93,11 @@ const Header = () => {
 					<div
 						className={
 							!menuMobile
-								? 'fixed z-50 h-screen left-0 top-0 w-[60%] border-r border-r-cyan-500 ease-in-out duration-500'
+								? 'fixed z-50  h-screen left-0 top-0 w-[60%] border-r border-r-cyan-500 ease-in-out duration-500'
 								: 'fixed  h-screen left-[-100%] ease-in-out duration-500'
 						}
 					>
-						<ul className=' z-50  uppercase relative  flex flex-col pt-24 h-screen bg-[#0CCBFF] '>
+						<ul className=' z-10 uppercase relative  flex flex-col pt-24 h-screen bg-[#0CCBFF] '>
 							<Link
 								to={'/'}
 								className='p-4 font-bold hover:opacity-60'
@@ -116,7 +122,7 @@ const Header = () => {
 									<Logout />
 								</div>
 							) : (
-								<div className='p-4'>
+								<div className='p-4 '>
 									<Link to='/login'>
 										<button className='btn  font-bold shadow-2xl '>
 											Login
@@ -127,7 +133,7 @@ const Header = () => {
 						</ul>
 					</div>
 				</div>
-			</header>
+			</m.header>
 		</>
 	);
 };

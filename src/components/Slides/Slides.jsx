@@ -41,7 +41,7 @@ export const Slides = () => {
 		<div className='px-2 w-full max-w-[980px] h-[600px]   m-auto relative group md:max-w-[960px] '>
 			<div
 				style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-				className='w-full h-full  rounded-2xl bg-center bg-cover bg-no-repeat duration-900 md:bg-contain  '
+				className='w-full h-full z-10  rounded-2xl bg-center bg-cover bg-no-repeat duration-900 md:bg-contain  '
 			></div>
 			<div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer duration-500'>
 				<BsChevronCompactLeft

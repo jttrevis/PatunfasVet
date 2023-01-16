@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
 import { auth } from './../../services/firebaseConfig';
 import { toast } from 'react-hot-toast';
+import { motion as m } from 'framer-motion';
 import Header from '../../components/Header/Header';
 
 const LoginForm = () => {
@@ -38,13 +39,23 @@ const LoginForm = () => {
 	};
 
 	return (
-		<>
+		<m.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			transition={{ duration: 1, ease: 'easeOut' }}
+			exit={{ opacity: 1 }}
+		>
 			{user ? (
 				<>{navigate('/')}</>
 			) : (
-				<div>
+				<>
 					<Header />
-					<form className='flex flex-col items-center justify-center container mx-auto min-h-screen '>
+					<m.form
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ delay: 1.2 }}
+						className='flex flex-col items-center justify-center container mx-auto py-8 '
+					>
 						<h3 className='text-5xl font-bold p-5'>Login</h3>
 						<input
 							className='m-2 p-1 rounded '
@@ -77,10 +88,10 @@ const LoginForm = () => {
 						>
 							Sign up!
 						</Link>
-					</form>
-				</div>
+					</m.form>
+				</>
 			)}
-		</>
+		</m.div>
 	);
 };
 

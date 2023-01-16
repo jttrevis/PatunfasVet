@@ -2,16 +2,26 @@ import React, { useState } from 'react';
 import { BackToTopButton } from '../../components/BackToTopButton/BackToTopButton';
 import { Footer } from './../../components/Footer/Footer';
 import Header from './../../components/Header/Header';
+import { motion as m } from 'framer-motion';
 
 const Appointment = () => {
 	const [name, setName] = useState('');
 	const [phone, setPhone] = useState('');
 	const [email, setEmail] = useState('');
 	return (
-		<div>
+		<m.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			transition={{ duration: 1, ease: 'easeOut' }}
+			exit={{ opacity: 1 }}
+		>
 			<Header />
-
-			<div className='md:flex justify-center items-center '>
+			<m.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ delay: 1.2 }}
+				className='md:flex justify-center items-center '
+			>
 				<form className='flex flex-col p-8 gap-4'>
 					<h2 className='text-2xl text-center '>Request your appointment</h2>
 					<input
@@ -55,10 +65,10 @@ const Appointment = () => {
 						Request
 					</button>
 				</form>
-			</div>
+			</m.div>
 			<Footer />
 			<BackToTopButton />
-		</div>
+		</m.div>
 	);
 };
 

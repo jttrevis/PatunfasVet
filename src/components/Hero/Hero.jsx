@@ -1,7 +1,8 @@
 import React from 'react';
 import { AppoitnmentButton } from '../AppointmentButton/AppointmentButton';
 import { BackToTopButton } from '../BackToTopButton/BackToTopButton';
-import { Footer } from '../Footer/Footer';
+import { motion as m } from 'framer-motion';
+
 import { ServicesTable } from '../ServicesTable/ServicesTable';
 import { HoursTable } from './../HoursTable/HoursTable';
 
@@ -17,16 +18,26 @@ export const Hero = () => {
 						/>
 					</div>
 					<div className='flex flex-col justify-center items-center'>
-						<h1 className='text-6xl  text-center font-extrabold p-6'>
+						<m.h1
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ delay: 0.7 }}
+							className='text-6xl  text-center font-extrabold z-0 p-6'
+						>
 							Pantufas Vet
-						</h1>
-						<h4 className='text-2xl text-center p-12'>
+						</m.h1>
+						<m.h4
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ delay: 1, duration: 1 }}
+							className='text-2xl text-center p-12'
+						>
 							Welcome to our veterinary clinic! We offer high-quality medical
 							services, preventative care, and emergency services for your pets.
 							Our experienced staff uses advanced technology to ensure the best
 							treatment. We also provide counseling on nutrition and behavior.
 							Contact us to schedule an appointment.
-						</h4>
+						</m.h4>
 						<AppoitnmentButton />
 					</div>
 				</section>
@@ -61,7 +72,6 @@ export const Hero = () => {
 				</section>
 			</main>
 			<div>
-				<Footer />
 				<BackToTopButton />
 			</div>
 		</>

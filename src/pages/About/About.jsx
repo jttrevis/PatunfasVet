@@ -1,15 +1,21 @@
 import { BackToTopButton } from '../../components/BackToTopButton/BackToTopButton';
 import { Slides } from '../../components/Slides/Slides';
 import { Footer } from './../../components/Footer/Footer';
+import { motion as m } from 'framer-motion';
 import { AppoitnmentButton } from '../../components/AppointmentButton/AppointmentButton';
 
 import Header from './../../components/Header/Header';
 
 const About = () => {
 	return (
-		<>
+		<m.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			transition={{ duration: 1, ease: 'easeOut' }}
+			exit={{ opacity: 1 }}
+		>
 			<Header />
-			<div className='px-2 w-full max-w-[980px] h-[600px]   m-auto relative group md:max-w-[960px] '>
+			<div className='px-2 w-full max-w-[980px] h-[600px]  m-auto relative group md:max-w-[960px] '>
 				<Slides />
 				<section className='py-12'>
 					<p className='text-center text-xl p-6'>
@@ -58,7 +64,7 @@ const About = () => {
 				<Footer />
 				<BackToTopButton />
 			</div>
-		</>
+		</m.div>
 	);
 };
 

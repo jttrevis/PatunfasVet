@@ -60,5 +60,9 @@ body {
   -webkit-text-stroke-color: #000;
 }
 
+.zIndex {
+  z-index: 100 !important;
+}
+
 
 
