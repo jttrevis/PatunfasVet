@@ -48,7 +48,13 @@ export const Hero = () => {
 							<p className='text-2xl text-center '>Liverpool, L15 0HN</p>
 						</div>
 						<button className=' btn w-[200px] my-8 shadow-2xl'>
-							Get Directions
+							<a
+								target='_blank'
+								href='https://goo.gl/maps/tPq8ebAhG3Qc4oq86'
+								rel='noreferrer'
+							>
+								Get Directions
+							</a>
 						</button>
 						<HoursTable />
 					</div>

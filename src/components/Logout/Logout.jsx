@@ -11,7 +11,9 @@ const Logout = () => {
 
 		await signOut(auth)
 			.then(() => {
-				toast.success('Bye Bye');
+				toast('Bye Bye', {
+					icon: '👏',
+				});
 				navigate('/login');
 			})
 			.catch((error) => {

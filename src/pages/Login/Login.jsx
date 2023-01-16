@@ -27,10 +27,10 @@ const LoginForm = () => {
 		e.preventDefault();
 		await signInWithEmailAndPassword(auth, email, password)
 			.then((userCredentials) => {
-				toast.success('Logged in successfully');
-				console.log(userCredentials);
+				toast.success('Logged!');
 				navigate('/');
 			})
+
 			.catch((error) => {
 				console.log(error);
 				toast.error('Password or email is incorrect');
