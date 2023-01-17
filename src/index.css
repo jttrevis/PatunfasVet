@@ -43,7 +43,7 @@ body {
 }
 
 .hoursBlock ul li {
-  border-bottom: 3px solid black;
+    border-bottom: 3px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -8,11 +8,16 @@ import Home from './pages/Home/Home';
 import LoginForm from './pages/Login/Login';
 import RegisterForm from './pages/Register/Register';
 import { Emergency } from './pages/Emergency/Emergency';
+import { Others } from './pages/Others/Others';
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
+				<Route
+					path='/others'
+					element={<Others />}
+				/>
 				<Route
 					path='/emergency'
 					element={<Emergency />}

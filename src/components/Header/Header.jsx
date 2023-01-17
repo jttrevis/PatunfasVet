@@ -63,6 +63,12 @@ const Header = () => {
 						>
 							Appointment
 						</Link>
+						<Link
+							to={'/others'}
+							className='p-8 font-bold hover:scale-150 duration-300'
+						>
+							Our Services
+						</Link>
 
 						{user ? (
 							<div className='p-8 flex flex-col items-center justify-center'>
@@ -115,6 +121,13 @@ const Header = () => {
 								className='p-4 font-bold hover:opacity-60'
 							>
 								Appointment
+							</Link>
+
+							<Link
+								to={'/others'}
+								className='p-4 font-bold hover:opacity-60'
+							>
+								Our Services
 							</Link>
 
 							{user ? (
