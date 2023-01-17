@@ -3,7 +3,6 @@ import { useCallback, useEffect, useState } from 'react';
 import { auth } from './../../services/firebaseConfig';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import { motion as m } from 'framer-motion';
 
 import Logout from '../Logout/Logout';
 
@@ -22,8 +21,6 @@ const Header = () => {
 		});
 		return listen();
 	}, []);
-
-	console.log(user);
 
 	const handleOpenMenuMobile = useCallback(() => {
 		setMenuMobile(!menuMobile);
