@@ -1,5 +1,5 @@
 import { onAuthStateChanged } from 'firebase/auth';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { auth } from './../../services/firebaseConfig';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
@@ -25,17 +25,13 @@ const Header = () => {
 
 	console.log(user);
 
-	const handleOpenMenuMobile = () => {
+	const handleOpenMenuMobile = useCallback(() => {
 		setMenuMobile(!menuMobile);
-	};
+	}, [menuMobile]);
+
 	return (
 		<>
-			<m.header
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{ delay: 0.3 }}
-				className=' flex items-center justify-center mt-20  px-4 mx-auto  '
-			>
+			<header className=' flex items-center justify-center mt-20  px-4 mx-auto  '>
 				<div className='flex  '>
 					<Link to='/'>
 						<img
@@ -100,7 +96,7 @@ const Header = () => {
 						className={
 							!menuMobile
 								? 'fixed z-50  h-screen left-0 top-0 w-[60%] border-r border-r-cyan-500 ease-in-out duration-500'
-								: 'fixed  h-screen left-[-100%] ease-in-out duration-500'
+								: 'fixed z-50  h-screen left-[-60%] border-r border-r-cyan-500 ease-in-out duration-500'
 						}
 					>
 						<ul className=' z-10 uppercase relative  flex flex-col pt-24 h-screen bg-[#0CCBFF] '>
@@ -146,7 +142,7 @@ const Header = () => {
 						</ul>
 					</div>
 				</div>
-			</m.header>
+			</header>
 		</>
 	);
 };
