@@ -19,9 +19,13 @@ Here are the technologies used in this project.
 
 ## WebSite
 
-[!(https://user-images.githubusercontent.com/105820012/213281375-d7b3dc35-e641-473d-8fc3-98f201b6362f.mp4)]
+![gif](https://user-images.githubusercontent.com/105820012/213282441-8ff78894-edb1-4911-8652-d9482ebb92f8.gif)
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/105820012/213284853-49d99a41-80a1-4ff1-ab6e-cc0c621c4889.gif)
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/105820012/213284860-aab41537-273a-4d83-898a-3665398fd7f5.gif)
 
-https://user-images.githubusercontent.com/105820012/213281375-d7b3dc35-e641-473d-8fc3-98f201b6362f.mp4
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
