@@ -45,7 +45,7 @@ You may also see any lint errors in the console.
 ## Links
 
 - Deploy on Vercel: https://vetclinic-one.vercel.app/
-- Repository: https://github.com/jttrevis/login-app
+- Repository: https://github.com/jttrevis/PatunfasVet
   - In case of sensitive bugs like security vulnerabilities, please contact
     jr.trevis@hotmail.com directly instead of using issue tracker. We value your effort
     to improve the security and privacy of this project!
