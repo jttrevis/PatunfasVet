@@ -20,11 +20,12 @@ Here are the technologies used in this project.
 ## WebSite
 
 ![gif](https://user-images.githubusercontent.com/105820012/213282441-8ff78894-edb1-4911-8652-d9482ebb92f8.gif)
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/105820012/213284853-49d99a41-80a1-4ff1-ab6e-cc0c621c4889.gif)
-![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/105820012/213284860-aab41537-273a-4d83-898a-3665398fd7f5.gif)
+![gif](https://user-images.githubusercontent.com/105820012/213284853-49d99a41-80a1-4ff1-ab6e-cc0c621c4889.gif)
+![gif](https://user-images.githubusercontent.com/105820012/213284860-aab41537-273a-4d83-898a-3665398fd7f5.gif)
 
 
-
+## Conclusion
+The veterinary website project is a web application that aims to provide a convenient way for veterinary clinics to manage their patient information and appointments. It was developed using ReactJS, Tailwind CSS, Firebase, and a mobile-first approach, which ensures that the application is easy to use on mobile devices. It includes features like user authentication and patient management, which were tested to ensure that they work correctly. It was deployed on Vercel hosting and was ready to use by veterinary clinics.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
