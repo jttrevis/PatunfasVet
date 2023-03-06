@@ -14,16 +14,16 @@ export const Others = () => {
 				animate={{ opacity: 1 }}
 				transition={{ delay: 0.3 }}
 			>
-				<main className='flex gap-16 flex-col p-6 my-12 max-w-[780px] justify-center items-center mx-auto  '>
-					<div className=''>
-						<div className='flex text-center flex-col justify-center items-center hover:scale-110 duration-500 '>
-							<h1 className='text-2xl text-center'>CheckUp</h1>
+				<main className="flex gap-16 flex-col p-6 my-12 max-w-[780px] justify-center items-center mx-auto  ">
+					<div className="">
+						<div className="flex text-center flex-col justify-center items-center">
+							<h1 className="text-2xl text-center">CheckUp</h1>
 							<img
-								src='images/servicesPhotos/petCheckUp.jpg'
-								alt=''
-								className='serviceBlock  shadow-2xl   '
+								src="images/servicesPhotos/petCheckUp.jpg"
+								alt=""
+								className="serviceBlock  shadow-2xl   "
 							/>
-							<p className='text-xl px-2'>
+							<p className="text-xl px-2">
 								Regular check-ups are important for pet health because they
 								detect issues early, prevent serious illness, improve quality of
 								life and are a chance to update vaccinations and discuss
@@ -32,14 +32,14 @@ export const Others = () => {
 						</div>
 					</div>
 
-					<div className='flex text-center flex-col justify-center items-center hover:scale-110 duration-500'>
-						<h1 className='text-2xl text-center'>Neutering</h1>
+					<div className="flex text-center flex-col justify-center items-center ">
+						<h1 className="text-2xl text-center">Neutering</h1>
 						<img
-							src='images/servicesPhotos/petNeut.jpg'
-							alt=''
-							className='serviceBlock  shadow-2xl   '
+							src="images/servicesPhotos/petNeut.jpg"
+							alt=""
+							className="serviceBlock  shadow-2xl   "
 						/>
-						<p className='text-xl px-2'>
+						<p className="text-xl px-2">
 							Neutering pets can help control population, prevent unwanted
 							litters, and has health benefits. It also decreases aggressive
 							behavior, and the likelihood of roaming. It's an important aspect
@@ -47,14 +47,14 @@ export const Others = () => {
 						</p>
 					</div>
 
-					<div className='flex text-center flex-col justify-center items-center hover:scale-110 duration-500'>
-						<h1 className='text-2xl text-center'>Dentistry</h1>
+					<div className="flex text-center flex-col justify-center items-center">
+						<h1 className="text-2xl text-center">Dentistry</h1>
 						<img
-							src='images/servicesPhotos/petDentist.jpg'
-							alt=''
-							className='serviceBlock  shadow-2xl   '
+							src="images/servicesPhotos/petDentist.jpg"
+							alt=""
+							className="serviceBlock  shadow-2xl   "
 						/>
-						<p className='text-xl px-2'>
+						<p className="text-xl px-2">
 							Dental care for pets is important because it helps to maintain
 							their overall health and well-being. Just like in humans, dental
 							issues in pets can lead to pain, infection, and even organ damage
@@ -63,14 +63,14 @@ export const Others = () => {
 						</p>
 					</div>
 
-					<div className='flex text-center flex-col justify-center items-center hover:scale-110 duration-500'>
-						<h1 className='text-2xl text-center'>Surgery</h1>
+					<div className="flex text-center flex-col justify-center items-center ">
+						<h1 className="text-2xl text-center">Surgery</h1>
 						<img
-							src='images/servicesPhotos/petSurgery.jpg'
-							alt=''
-							className='serviceBlock  shadow-2xl   '
+							src="images/servicesPhotos/petSurgery.jpg"
+							alt=""
+							className="serviceBlock  shadow-2xl   "
 						/>
-						<p className='text-xl px-2'>
+						<p className="text-xl px-2">
 							Our veterinary clinic specializes in pet surgeries. Our team of
 							experienced veterinarians perform a wide range of procedures, from
 							routine spay and neuter to complex orthopedic and soft tissue
@@ -80,14 +80,14 @@ export const Others = () => {
 						</p>
 					</div>
 
-					<div className='flex text-center flex-col justify-center items-center hover:scale-110 duration-500'>
-						<h1 className='text-2xl text-center'>Vaccination</h1>
+					<div className="flex text-center flex-col justify-center items-center ">
+						<h1 className="text-2xl text-center">Vaccination</h1>
 						<img
-							src='images/servicesPhotos/petVac.jpg'
-							alt=''
-							className='serviceBlock  shadow-2xl   '
+							src="images/servicesPhotos/petVac.jpg"
+							alt=""
+							className="serviceBlock  shadow-2xl   "
 						/>
-						<p className='text-xl px-2'>
+						<p className="text-xl px-2">
 							Vaccinating your pet is important because it helps protect them
 							from serious diseases by stimulating the immune system. It also
 							helps prevent the spread of diseases to other animals and humans.
@@ -95,7 +95,7 @@ export const Others = () => {
 							well-being.
 						</p>
 					</div>
-					<div className='flex items-center justify-center'>
+					<div className="flex items-center justify-center">
 						<AppoitnmentButton />
 					</div>
 				</main>
