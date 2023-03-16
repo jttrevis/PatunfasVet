@@ -1,5 +1,25 @@
 # IS LIVE NOW : [Pantufas Vet](https://vetclinic-one.vercel.app/)
 
+![vet](https://user-images.githubusercontent.com/105820012/225734191-c7d0f38c-942e-49d1-865a-53affedf7559.png)
+
+## Video
+https://user-images.githubusercontent.com/105820012/225733973-c0712d8e-32d4-434e-aaef-84b822c22821.mp4
+
+## Home Page
+![screencapture-vetclinic-one-vercel-app-2023-03-16-19_36_32](https://user-images.githubusercontent.com/105820012/225733989-43119860-ff78-40da-973e-d0b06c88c58f.png)
+
+## About Page
+![screencapture-vetclinic-one-vercel-app-about-2023-03-16-19_36_46](https://user-images.githubusercontent.com/105820012/225734000-0c0d1761-deeb-4715-ab00-49c06926501c.png)
+
+## Appoitment Page
+![screencapture-vetclinic-one-vercel-app-appointment-2023-03-16-19_36_58](https://user-images.githubusercontent.com/105820012/225734014-a8859877-2e43-4934-8316-7cfbcba11ae5.png)
+
+## Services Page
+![screencapture-vetclinic-one-vercel-app-others-2023-03-16-19_37_08](https://user-images.githubusercontent.com/105820012/225734029-56a898ea-7902-4150-82ca-ca1de6f81d12.png)
+
+## Login Page
+![screencapture-vetclinic-one-vercel-app-login-2023-03-16-19_37_23](https://user-images.githubusercontent.com/105820012/225734039-4df10d85-8930-40d2-b413-8d3b0b20cefd.png)
+
 ## About
 
 A web application for veterinary clinics to manage their patient information and appointments.
@@ -17,11 +37,6 @@ Here are the technologies used in this project.
 
 - Vercel
 
-## WebSite
-
-![gif](https://user-images.githubusercontent.com/105820012/213282441-8ff78894-edb1-4911-8652-d9482ebb92f8.gif)
-![gif](https://user-images.githubusercontent.com/105820012/213284853-49d99a41-80a1-4ff1-ab6e-cc0c621c4889.gif)
-![gif](https://user-images.githubusercontent.com/105820012/213284860-aab41537-273a-4d83-898a-3665398fd7f5.gif)
 
 
 ## Conclusion
